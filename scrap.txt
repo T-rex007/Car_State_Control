@@ -1,0 +1,17 @@
+
+
+void Car::predictState(float dt){
+    //Update Distance(Assuming constant speed)
+    float tmp = CURRENT_STATE[0];
+    CURRENT_STATE[0] = dt *CURRENT_STATE[1];
+}
+void Car::move(){
+    POSITION_COORDINATES[0] = POSITION_COORDINATES[0] + DIRECTION_VECTOR[0];
+    POSITION_COORDINATES[1] = POSITION_COORDINATES[1] + DIRECTION_VECTOR[1];
+}
+void Car::turnLeft(){
+    
+}
+void Car::turnRight(){
+
+}
